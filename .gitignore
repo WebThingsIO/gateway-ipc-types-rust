@@ -1,0 +1,5 @@
+/target
+gateway-addon-ipc-schema
+schema.json
+.vscode
+.idea

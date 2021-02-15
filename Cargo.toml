@@ -1,0 +1,20 @@
+[package]
+name = "webthings-gateway-ipc-types"
+version = "1.0.0-alpha.1"
+authors = ["Tim Hellhake"]
+edition = "2018"
+description = "Automatically generated type definitions for the WebThings gateway addon IPC protocol"
+license = "MPL-2.0"
+repository = "https://github.com/tim-hellhake/webthings-gateway-ipc-types"
+categories = ["api-bindings"]
+keywords = ["webthings"]
+
+[dependencies]
+"serde" = "1.0.117"
+"serde_json" = "1.0.61"
+schemafy = { git = "https://github.com/Marwes/schemafy.git" }
+
+[build-dependencies]
+"serde" = "1.0.117"
+"serde_json" = "1.0.61"
+"os_pipe" = "0.9.2"
