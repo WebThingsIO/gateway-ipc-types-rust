@@ -10,11 +10,11 @@ categories = ["api-bindings"]
 keywords = ["webthings"]
 
 [dependencies]
-"serde" = "1.0.117"
-"serde_json" = "1.0.61"
+serde = "1.0.117"
+serde_json = "1.0.61"
 schemafy = { git = "https://github.com/Marwes/schemafy.git" }
 
 [build-dependencies]
-"serde" = "1.0.117"
-"serde_json" = "1.0.61"
-"os_pipe" = "0.9.2"
+serde = "1.0.117"
+serde_json = "1.0.61"
+os_pipe = "0.9.2"
