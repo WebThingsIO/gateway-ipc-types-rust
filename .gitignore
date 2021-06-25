@@ -3,3 +3,4 @@ gateway-addon-ipc-schema
 schema.json
 .vscode
 .idea
+Cargo.lock
