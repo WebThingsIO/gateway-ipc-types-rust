@@ -8,7 +8,7 @@
 mod types;
 
 /// Additional Traits and implementations for the types
-pub mod extras;
+mod extras;
 
 pub use extras::*;
 pub use types::*;
