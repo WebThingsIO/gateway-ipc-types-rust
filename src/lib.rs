@@ -4,4 +4,11 @@
  * file, You can obtain one at http://mozilla.org/MPL/2.0/.*
  */
 
-pub mod types;
+/// Automatically generated type definitions for the WebThings gateway addon IPC protocol
+mod types;
+
+/// Additional Traits and implementations for the types
+mod extras;
+
+pub use extras::*;
+pub use types::*;

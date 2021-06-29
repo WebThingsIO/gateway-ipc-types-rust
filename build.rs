@@ -3,20 +3,28 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/.*
  */
-use std::fs::{self};
+use std::fs;
 use std::io::Write;
 use std::path::Path;
 use std::process::{Command, Stdio};
 
 use os_pipe::{dup_stderr, dup_stdout};
 
-use jsonschema_code_generator::generate;
+mod extras_generator;
 
 fn main() {
     clone_schema_repo();
-    let rust_code = generate(&Path::new("gateway-addon-ipc-schema/schema.json"));
-    let rust_code = format(rust_code);
-    fs::write("src/types.rs", rust_code).expect("Unable to write file");
+    let schema_path = Path::new("gateway-addon-ipc-schema/schema.json");
+    code_gen(
+        jsonschema_code_generator::generate(&schema_path),
+        "src/types.rs",
+    );
+    code_gen(extras_generator::generate(&schema_path), "src/extras.rs");
+}
+
+fn code_gen(code: String, file: &str) {
+    let rust_code_types = format(code);
+    fs::write(file, rust_code_types).expect("Unable to write file");
 }
 
 fn clone_schema_repo() {
