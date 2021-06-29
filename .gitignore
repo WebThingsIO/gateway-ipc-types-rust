@@ -4,3 +4,4 @@ schema.json
 .vscode
 .idea
 Cargo.lock
+src/types.rs
