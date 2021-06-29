@@ -5,7 +5,7 @@
  */
 
 /// Automatically generated type definitions for the WebThings gateway addon IPC protocol
-pub mod types;
+mod types;
 
 /// Additional Traits and implementations for the types
 pub mod extras;
