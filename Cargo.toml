@@ -1,6 +1,6 @@
 [package]
 name = "webthings-gateway-ipc-types"
-version = "1.0.0-alpha.1"
+version = "1.0.0-alpha.2"
 authors = ["Tim Hellhake"]
 edition = "2018"
 description = "Automatically generated type definitions for the WebThings gateway addon IPC protocol"
