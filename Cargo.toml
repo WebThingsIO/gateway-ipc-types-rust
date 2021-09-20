@@ -5,7 +5,7 @@ authors = ["Tim Hellhake"]
 edition = "2018"
 description = "Automatically generated type definitions for the WebThings gateway addon IPC protocol"
 license = "MPL-2.0"
-repository = "https://github.com/tim-hellhake/webthings-gateway-ipc-types"
+repository = "https://github.com/WebThingsIO/webthings-gateway-ipc-types"
 categories = ["api-bindings"]
 keywords = ["webthings"]
 
