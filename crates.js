@@ -1,0 +1,1 @@
+window.ALL_CRATES = ["webthings_gateway_ipc_types"];
